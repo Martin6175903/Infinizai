@@ -1,0 +1,32 @@
+$title-color: #57B8FF;
+$default: #fff;
+$info-text-color: #999999;
+
+%properts {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+%title {
+    font-size: 16px;
+    line-height: 16px;
+    color: $title-color;
+}
+
+%subtitle {
+    font-size: 64px;
+    line-height: 74px;
+}
+
+%info-text {
+    font-size: 20px;
+    line-height: 30px;
+    color: $info-text-color;
+}
+
+@function max ($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function min ($numbers...) {
+    @return m#{i}n(#{$numbers});
+}

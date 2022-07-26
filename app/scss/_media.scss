@@ -1,0 +1,528 @@
+@media (max-width: 1550px) {
+    .header {
+        &__img::after {
+            position: absolute;
+            content: '';
+            right: 20px;   
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .custom {
+        &__inner {
+            justify-content: center;
+            align-items: center;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1040px) {
+    .header {
+        &__navigation {
+            margin-bottom: 100px;
+        }
+        &__list-item:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .header {
+        &__list-item:not(:last-child) {
+            margin-right: 20px;
+        }
+        &__info {
+            &-subtitle {
+                font-size: 46px;
+                line-height: 56px;
+                &__line::after {
+                    width: 295px;
+                }
+            }
+            &-btns {
+                display: block;
+            }
+            &-btn {
+                width: 100%;
+            }
+        }
+        &__links-social {
+            top: 200px;
+        }
+        &__img::after {
+            right: 38%;
+            bottom: -5px;
+        }
+    }
+    .cloud-gaming {
+        &__info-title {
+        font-size: 40px;
+        line-height: 50px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+        &__social {
+            width: 65%;
+            &-list {
+                flex-direction: row;
+                justify-content: center;
+                &__item {
+                    &:first-child {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            &__link {
+                margin-bottom: 10px;
+                width: 36px;
+                height: 36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 815px) {
+    .header {
+        &__button {
+            padding-left: 60px;
+        }
+        &__button-link {
+            padding: 7px 15px;
+        }
+        &__button::before {
+            content: '';
+            position: absolute;
+            top: 4px;
+        }
+    }
+    .sponsors {
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .description {
+        padding-bottom: 260px;
+        &__item-title {
+            font-size: 30px;
+            line-height: 50px;
+        }
+        &__item {
+            height: 200%;
+        }
+    }
+    .news {
+        &__info {
+            margin-bottom: 110px;
+            &-btn {
+                left: 0;
+                bottom: -85px;
+            }
+        }
+        &__articles {
+            margin-top: 15px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__article:first-child {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .community {
+        &__title {
+            font-size: 50px;
+            line-height: 60px;
+            margin-bottom: 30px;
+        }
+        &__text {
+            max-width: 740px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        position: relative;
+        &__info-subtitle {
+            font-size: 33px;
+            line-height: 50px;
+            margin-bottom: 20px;
+        }
+        &__links-social {
+            top: 160px;
+        }
+        &__info-subtitle__line::after {
+            width: 210px;
+        }
+        &__navigation-inner {
+            order: 1;
+            margin-right: 30px;
+            position: relative;
+            background-color: #2a313c;
+        }
+        &__list {
+            position: absolute;
+            display: block;
+            right: 0;
+            bottom: 250px;
+            opacity: 0;
+            width: 120px;
+            z-index: 20;
+            .header__list-item {
+                margin-right: 0;
+                text-align: center;
+            }
+            .header__list-item:last-child {
+                padding-bottom: 10px;
+            }
+            &.open-menu {
+                opacity: 1;
+                bottom: -135px;
+                transition: all .5s;
+                background-color: #000;
+            }
+        }
+        &__menu-burger {
+            position: absolute;
+            max-width: 40px;
+            max-height: 60px;
+            width: 30px;
+            height: 15px;
+            cursor: pointer;
+            &__inner {
+                position: relative;
+            }
+            &.open-menu span:nth-child(1) {
+                opacity: 0;
+                transition: all .5s;
+            }
+            &.open-menu span:nth-child(2) {
+                top: 0;
+                transform: rotate(38deg);
+                transition: all .5s;
+            }
+            &.open-menu span:nth-child(3) {
+                top: 0;
+                transform: rotate(-38deg);
+                transition: all .5s;
+            }
+            span {
+                width: 100%;
+                height: 3px;
+                position: absolute;
+                background-color: #000;
+            }
+            span:nth-child(1) {
+                top: -10px;
+                transition: all .5s;
+            }
+            span:nth-child(2) {
+                top: 0;
+                transition: all .5s;
+            }
+            span:nth-child(3) {
+                top: 10px;
+                transition: all .5s;
+            }
+        }
+        &__img::after {
+            right: 35%;
+        }
+    }
+    .des-gaming {
+        &__subtitle {
+            font-size: 46px;
+            line-height: 56px;
+        }
+        &__info {
+            &-title {
+                font-size: 25px;
+                line-height: 30px;
+            }
+            &-text {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+    .footer {
+        &__info {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__contacts {
+            .logo {
+                margin-right: auto;
+                margin-left: auto;
+            }
+            &-text {
+                max-width: 100%;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        &__list {
+            text-align: center;
+        }
+        &__social {
+            width: 100%;
+            text-align: center;
+            &-list__item:not(:last-child) {
+                margin-right: 0;
+            }
+            &-list {
+                &-div1 {
+                    margin-right: 10px;
+                }
+                &-div1, &-div2 {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 673px) {
+    .header {
+        &__info {
+            &-subtitle {
+                font-size: 24px;
+                line-height: 34px;
+                &__line::after {
+                    width: 160px;
+                }
+            }
+            &-text {
+                font-size: 13px;
+                line-height: 23px;
+                margin-bottom: 30px;
+            }
+            &-btns {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            &-btn {
+                width: 100%;
+            }
+        }
+        &__links-social {
+            top: 155px;
+            left: -150px;
+        }
+        &__social-btn:not(:last-child) {
+            margin-right: 20px;
+        }
+        &__img::after {
+            right: 33%;
+            bottom: -10px;
+        }
+    }
+    .des-gaming {
+        &__inner {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__info {
+            padding: 35px;
+            text-align: center;
+        }
+        &__info::before {
+            display: none;
+        }
+    }
+    .community {
+        &__title {
+            font-size: 35px;
+            line-height: 45px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .community {
+        &__form {
+            display: block;
+            &-email {
+                width: 80%;
+                padding: 20px 10px;
+                &::placeholder {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+            &-btn {
+                margin-top: 15px;
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .header {
+        padding-bottom: 100px;
+        &__inner {
+            display: block;
+        }
+        &__navigation {
+            flex-wrap: wrap;
+        }
+        &__logo {
+            margin-right: 85px;
+        }
+        &__button {
+            order: 1;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        &__img {
+            margin-bottom: 20px;
+        }
+        &::after {
+            display: none;
+        }
+        &__menu-burger span {
+            background-color: #fff;
+        }
+        &__img::after {
+            right: 43%;
+        }
+    }
+    .info-title {
+        font-size: 15px;
+    }
+    .sponsors {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 35px;
+            &-line::after {
+                width: 175px;
+            }
+        }
+    }
+    .cloud-gaming {
+        &__inner {
+            display: block;
+        }
+        &__info-btn {
+            margin-top: 20px;
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .description {
+        &__item-img {
+            width: 80%;
+            height: 13%;
+        }
+        &__item-title {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .news {
+
+        &__articles {
+            grid-gap: 20px 14px;
+            grid-template-columns: 1fr;
+        }
+        &__article {
+            grid-column: span 2;
+            margin-left: auto;
+            margin-right: auto;
+            &-title {
+                max-width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    .header {
+        &__logo {
+            margin-right: 30px;
+        }
+        &__list.open-menu {
+            bottom: -170px;
+            right: -30px;
+        }
+        &__list {
+            right: -30px;
+            width: 60px;
+        }
+        &__list-item {
+            display: flex;
+            justify-content: center;
+        }
+        &__button-link {
+            padding: 6px 10px;
+        }
+        &__img::after {
+            right: 31%;
+        }
+    }
+    .des-gaming {
+        &__subtitle {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+    .cloud-gaming {
+        &__info-title {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+        &__info-text {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+    .custom {
+        &__info {
+            padding-left: 15px;
+            &-subtitle {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            &-text {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+    .news {
+        &__info-title {
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+    .footer {
+        &__contacts {
+            &-text {
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    }
+}
